@@ -51,6 +51,8 @@ header {
 }
 
 .timeline {
+    display: flex;
+    flex-direction: column;
     margin-top: 20px;
     color: #fff;
     text-align: justify;
@@ -59,13 +61,18 @@ header {
     font-size: 13px;
 }
 
+.timeline div {
+    margin-bottom: -3px;
+}
+
+
 footer {
     width: calc(100% - 12px);
     margin: auto;
-    height: 40px;
+    height: 60px;
     background-color: #f2c757;
     text-align: center;
-    line-height: 40px;
+    line-height: 60px;
     font-family: "Trajan Pro";
     font-size: 12px;
     margin-top: 5px;
@@ -100,7 +107,7 @@ footer {
         width: auto;
     }
 
-    .timeline span {
+    .timeline div {
         padding-right: 10px;
         padding-left: 10px;    
     }
@@ -147,7 +154,7 @@ footer {
         width: auto;
     }
 
-     .timeline span {
+     .timeline div {
         padding-right: 10px;
         padding-left: 10px;    
     }
