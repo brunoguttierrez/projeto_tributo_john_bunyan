@@ -4,8 +4,7 @@ body {
 }
 
 header {
-    width: 100%;
-    max-width: 99.5%;
+    width: calc(100% - 12px);
     margin: auto;
     height: 85px;
     background-color: #f2c757;
@@ -43,8 +42,7 @@ header {
 .container {
     background-color: #3f0915;
     height: auto;
-    width: 100%;
-    max-width:  99.5%;;
+    width: calc(100% - 12px);
     margin: auto;
     display: flex;
     justify-content: center;
@@ -62,8 +60,7 @@ header {
 }
 
 footer {
-    width: 100%;
-    max-width: 99.5%;
+    width: calc(100% - 12px);
     margin: auto;
     height: 40px;
     background-color: #f2c757;
@@ -74,7 +71,14 @@ footer {
     margin-top: 5px;
 }
 
-@media screen and (max-width: 740px) and (min-width: 410px) {
+@media screen and (max-width: 760px) and (min-width: 412px) {
+    
+    header, 
+    footer, 
+    .container {
+        width: calc(100% - 12px);
+    }
+
     .content img {
         width: 312px;
         height: 312px;
@@ -85,26 +89,37 @@ footer {
     }
 
     .content span {
-        margin-left: -60px;
+        margin-left: -140px;
     }
 
     .timeline {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        font-size: 12px;
         width: auto;
     }
-    .container {
-        padding: 10px
-    };
+
+    .timeline span {
+        padding-right: 10px;
+        padding-left: 10px;    
+    }
 }
 
-@media screen and (max-width: 409px) and (min-width: 320px) {
+@media screen and (max-width: 413px) and (min-width: 320px) {
+    
     header {
-        font-size: 40px;
+        font-size: 50px;
+    }
+    
+    header, 
+    footer, 
+    .container {
+        width: calc(100% - 12px);
     }
 
     .container {
-        height: auto;
-        width: auto;
-        margin: auto;
+        
         display: flex;
         justify-content: center;
         align-items: center;
@@ -128,13 +143,13 @@ footer {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        font-size: 10px;
+        font-size: 12px;
         width: auto;
     }
 
      .timeline span {
         padding-right: 10px;
-        padding-left: 10px;
-    
+        padding-left: 10px;    
     }
+
 }
