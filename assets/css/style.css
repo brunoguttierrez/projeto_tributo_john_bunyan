@@ -105,6 +105,8 @@ footer {
         flex-wrap: wrap;
         font-size: 12px;
         width: auto;
+        margin-left: 25px;
+        margin-rigth: 25px;
     }
 
     .timeline div {
